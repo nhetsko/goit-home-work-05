@@ -666,8 +666,15 @@ position: absolute;
     padding: 0;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.close-button:hover, .close-button:focus {
+    background-color: #404bbf;
+    border: none;
+}
 .icon-close {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.icon-close:hover, .icon-close:focus {
+    fill: #ffffff;
 }
 .form-title {
 color: var(--NAVY-BLUE, #2E2F42);
@@ -702,6 +709,9 @@ position: relative;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
+        .form-icon:focus {
+            fill: #4D5AE5;
+        }
 
 .form-button {
     display: block;
@@ -721,8 +731,11 @@ position: relative;
                 font-weight: 500;
                 line-height: 1.5;
                 letter-spacing: 0.04em;
+                transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
         }
-
+.checkbox {
+    margin-bottom: 24px;
+}
             .checkbox-label {
 color: var(--LIGHT-SLATE, #8E8F99);
 
@@ -735,6 +748,26 @@ color: var(--LIGHT-SLATE, #8E8F99);
     /* 116.667% */
     letter-spacing: 0.04em;
             }
+.icon-checkbox {
+    width: 16px;
+    height: 16px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 2px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    fill: transparent;
+}
+.checkbox-input:checked {
+    background-color:#404bbf;
+fill:#F4F4FD;
+
+
+}
+    .form-box-label {
+      margin-bottom: 16px;  
+    }
     .textarea {
     resize: none;
     width: 100%;
@@ -753,6 +786,9 @@ color: var(--LIGHT-SLATE, #8E8F99);
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
+.textarea:focus {
+    border-color: #4D5AE5;
+}
 .box-input {
     position: relative;
 }
@@ -765,4 +801,10 @@ color: var(--LIGHT-SLATE, #8E8F99);
         background-color: transparent;
         outline: transparent;
         transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.text-input:focus {
+    border-color: #4D5AE5;
+}
+.text-privat {
+    color: #4d5ae5;
 }
