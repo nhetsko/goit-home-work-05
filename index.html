@@ -569,25 +569,26 @@
           <div class="checkbox">
             <input
               class="checkbox-input visually-hidden"
-              id="user-privacy"
               type="checkbox"
+              id="user-privacy"
+              name="user_privacy"
               value="true"
-              name="user-privacy"
+              required
             />
             <label class="checkbox-label" for="user-privacy">
-              <span class="icon-checkbox">
+              <span class="checkbox-span">
                 <svg
-                  class="icon-checkbox"
+                  class="checkbox-icon"
                   width="10"
                   height="8"
-                  aria-label="check mark"
+                  aria-label="checkbox icon"
                 >
-                  <use href="./images/icons.svg#icon-checkbox"></use>
+                  <use href="/images/icons.svg#icon-checkbox"></use>
                 </svg>
               </span>
               I accept the terms and conditions of the
-              <a class="text-privat" href="./index.html">Privacy Policy</a>
-            </label>
+              <a class="checkbox-link" href="">Privacy Policy</a></label
+            >
           </div>
 
           <button class="form-button" type="submit">Send</button>
