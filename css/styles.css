@@ -745,7 +745,9 @@ border-radius: 4px;
 
 
 .form-box-label {
-margin-bottom: 16px;   }
+    display: block;
+margin-bottom: 16px;
+}
 
 .textarea {
     resize: none;
