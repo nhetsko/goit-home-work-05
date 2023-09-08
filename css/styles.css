@@ -702,7 +702,6 @@ color: var(--NAVY-BLUE, #2E2F42);
 .form-label {
     
     display: block;
-position: relative;
     color: #8e8f99;
     font-family: inherit;
     font-size: 12px;
